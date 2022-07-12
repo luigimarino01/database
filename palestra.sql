@@ -85,3 +85,50 @@ CREATE TABLE Istruttore(
     FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
     PRIMARY KEY(CFPersona)
 );
+
+CREATE TABLE Iscritto(
+    NumeroTesseraIscritto varchar(50),
+    CFPersona varchar(16) NOT NULL,
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona)
+);
+
+CREATE TABLE Acquista(
+    DataAcquistoProdotto date NOT NULL,
+    CodiceProdotto varchar(50) NOT NULL,
+    CFPersona varchar(16) NOT NULL,
+    FOREIGN KEY(CodiceProdotto) REFERENCES Prodotto(CodiceProdotto),
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
+    PRIMARY KEY(CodiceProdotto,CFPersona,DataAcquistoProdotto)
+);
+
+CREATE TABLE Contratto(
+    CodiceContratto varchar(30) NOT NULL,
+    DataStipulazioneContratto date NOT NULL,
+    DataScadenzaContratto date NOT NULL,
+    Stipendio float NOT NULL,
+    CFPersona varchar(16) NOT NULL,
+    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
+    PRIMARY KEY(CodiceContratto)
+);
+
+CREATE TABLE Sottoscrive(
+    DataSottoiscrizioneAbbonamento date NOT NULL,
+    DataScadenzaAbbonamento date NOT NULL,
+    CFPersona varchar(16) NOT NULL,
+    TipoAbbonamento varchar(50) NOT NULL,
+    NomePalestra varchar(50) NOT NULL,
+    FOREIGN KEY(CFPersona) REFERENCES Iscritto(CFPersona),
+    FOREIGN KEY(TipoAbbonamento) REFERENCES Abbonamento(TipoAbbonamento),
+    FOREIGN KEY(NomePalestra) REFERENCES Abbonamento(NomePalestra)
+
+);
+
+CREATE TABLE Conduce(
+    GiornoConduzione varchar(9) NOT NULL,
+    OraConduzione int NOT NULL,
+    CFPersona varchar(16) NOT NULL,
+    NomeCorso varchar(50) NOT NULL,
+    FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona),
+    FOREIGN KEY(NomeCorso) REFERENCES Corso(NomeCorso),
+    PRIMARY KEY(GiornoConduzione,OraConduzione)
+);
