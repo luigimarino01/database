@@ -1,6 +1,5 @@
 CREATE DATABASE Palestra;
 
-
 CREATE TABLE Sede (
     NomePalestra varchar(50) NOT NULL,
     Via varchar(255),
@@ -25,8 +24,6 @@ CREATE TABLE Corso(
     FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
     PRIMARY KEY(NomeCorso, NomePalestra)
 );
-
-
 
 CREATE TABLE Servizio(
     NomeServizio varchar(50) NOT NULL,
