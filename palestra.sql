@@ -14,7 +14,7 @@ CREATE TABLE Abbonamento (
    NomePalestra varchar(50) NOT NULL,
    PrezzoAbbonamento float NOT NULL,
    FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
-   Constraint PKAbbonamento PRIMARY KEY(TipoAbbonamento, NomePalestra)
+   PRIMARY KEY(TipoAbbonamento, NomePalestra)
 );
 
 CREATE TABLE Corso(
