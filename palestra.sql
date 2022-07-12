@@ -191,4 +191,3 @@ CREATE TABLE Contiene(
     FOREIGN KEY(CodiceSchedaAllenamento) REFERENCES SchedaAllenamento(CodiceSchedaAllenamento),
     PRIMARY KEY(NomeEsercizio, CodiceSchedaAllenamento)
 );
-ciao gigi
