@@ -251,7 +251,6 @@ INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12440','M
 INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12543','Amminoacide',500.00);
 
 --POPOLAMENTO TABELLA VENDE--
-a
 
 INSERT INTO Vende(CodiceScontrino,NomePalestra,CodiceProdotto,DataVenditaProdotto,CostoProdotto) VALUES('00314','Fit For Smile','12530','2022-07-11',2.50);
 INSERT INTO Vende(CodiceScontrino,NomePalestra,CodiceProdotto,DataVenditaProdotto,CostoProdotto) VALUES('00831','Fit For Smile','23145','2022-07-12',120.00);
