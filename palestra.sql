@@ -291,28 +291,32 @@ INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VAL
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H12I002A','Francesca','Perrotta','1997-04-11');
 
 --ISTRUTTORI
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H12I002A','Anselma','Trevisani','1977-12-05');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H82I002A','Anselma','Trevisani','1977-12-05');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H12I003A','Samuele','Costa','1988-04-11');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DLFDRM47H12I002B','Patrizio','Genovese','1997-05-13');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDTF47H12I032C','Galdino','Endrizzi','2000-01-28');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDTF47H12I067C','Nicola','Frattesi','1997-03-28');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ADFDTF47H12I064A','Giovanna','Rullo','1991-05-11');
+
 
 
 
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRG47H12I042A','Elio','Riccio','1999-09-13');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCHFDM47H12I421E','Bertoldo','Falasconi','1980-11-26');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FFFEEM47H12I052R','Ercole','Pinto','1997-08-03');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FWREEM47H12I162Z','Francesca','Caputo','1988-01-01');
 
 
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCORMA47H12I002A','Elsa','Autiero','1992-12-25');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCAMME47H12I002A','Eleonora','Marino','1979-12-31');
+
+
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDER47H12I002A','Andrea','Casale','1999-07-17');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFNFT97H12I002A','Davide','Verza','2001-09-10');
-
-
-
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DWFDRM41H12I002A','Vincenzo','Ferragamo','1986-10-09');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM88E93I002A','Pasquale','Polito','1986-04-23');
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDAE37H12I002A','Stefano','Pollicino','1999-07-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ELGDAE37H12I092Z','Elena','Grimaldi','1992-07-15');
 
 --ISCRITTI
 
@@ -348,9 +352,112 @@ INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VAL
 INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('YVGHMH50A69A400N','Alessandra','Rotundi','1999-07-12');
 
 
+--RIEMPIMENTO TABELLA PROPRIETARI
+INSERT INTO Proprietario(CFPersona,DataContrattoAcquisto) VALUES('BJKBBG63M46G859U','2010-02-06');
+INSERT INTO Proprietario(CFPersona,DataContrattoAcquisto) VALUES('RFPMMZ77M03F826F','2010-02-06');
+
+
+INSERT INTO Proprietario(CFPersona,DataContrattoAcquisto) VALUES('WSOVND60D03B840T','2015-01-05');
+
+INSERT INTO Proprietario(CFPersona,DataContrattoAcquisto) VALUES('GCRFLC57D52C449F','2019-08-28');
+
+INSERT INTO Proprietario(CFPersona,DataContrattoAcquisto) VALUES('MXHDLM75C44L247C','2021-04-09');
 
 
 
+--RIEMPIMENTO TABELLA DIPENDENTI LATO SEGRETARI
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('VGRGSD53R12A668L','0314');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('WSMPHG89B59I108V','0413');
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FFDCGU00D17F148H',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('KTYQMD89B13H043H',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('NNPVDM57M53G331M',NULL);
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('HVULBD91T51E825R','3941');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('THZYSS30R46C649S','3914');
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDRM47H12I002A',NULL);
+
+--RIEMPIMENTO TABELLA DIPENDENTI LATO ISTRUTTORI
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDRM47H82I002A','0001');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDRM47H12I003A','0002');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('DLFDRM47H12I002B','0003');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDTF47H12I032C','0004');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDTF47H12I067C','0005');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('ADFDTF47H12I064A','0006');
+
+
+
+
+
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDRG47H12I042A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCHFDM47H12I421E',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FFFEEM47H12I052R',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FWREEM47H12I162Z',NULL);
+
+
+
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCORMA47H12I002A','0011');
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCAMME47H12I002A','0012');
+
+
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDER47H12I002A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFNFT97H12I002A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('DWFDRM41H12I002A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDRM88E93I002A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('FCFDAE37H12I002A',NULL);
+INSERT INTO Dipendente(CFPersona, NumeroTesseraDipendente) VALUES('ELGDAE37H12I092Z',NULL);
+
+
+
+
+
+
+--RIEMPIMENTO TABELLA SEGRETARI
+INSERT INTO Segretario(CFPersona) VALUES('VGRGSD53R12A668L');
+INSERT INTO Segretario(CFPersona) VALUES('WSMPHG89B59I108V');
+
+INSERT INTO Segretario(CFPersona) VALUES('FFDCGU00D17F148H');
+INSERT INTO Segretario(CFPersona) VALUES('KTYQMD89B13H043H');
+INSERT INTO Segretario(CFPersona) VALUES('NNPVDM57M53G331M');
+
+INSERT INTO Segretario(CFPersona) VALUES('HVULBD91T51E825R');
+INSERT INTO Segretario(CFPersona) VALUES('THZYSS30R46C649S');
+
+INSERT INTO Segretario(CFPersona) VALUES('FCFDRM47H12I002A');
+
+
+--RIEMPIMENTO TABELLA ISTRUTTORI
+
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Zumba','FCFDRM47H82I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Fit Boxe','FCFDRM47H12I003A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('CrossFit','DLFDRM47H12I002B');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Pilates','FCFDTF47H12I032C');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Yoga','FCFDTF47H12I067C');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Sala','ADFDTF47H12I064A');
+
+
+
+
+
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Kick Boxing','FCFDRG47H12I042A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Pilates','FCHFDM47H12I421E');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Zumba','FFFEEM47H12I052R');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Sala','FWREEM47H12I162Z');
+
+
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('CrossFit','FCORMA47H12I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Sala','FCAMME47H12I002A');
+
+
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Pilates','FCFDER47H12I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Zumba','FCFNFT97H12I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Boxe','DWFDRM41H12I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Kick Boxing','FCFDRM88E93I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('CrossFit','FCFDAE37H12I002A');
+INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Sala','ELGDAE37H12I092Z');
 
 
 
