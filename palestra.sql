@@ -187,7 +187,6 @@ CREATE TABLE Contiene(
 INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Fit For Smile', 'Via Pietro Donadio', '80021', 'Afragola');
 INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Mondo Fitness', 'Via Giovanni Rana', '80024', 'Cardito');
 INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Level Up Via Argine', 'Via Argine', '80147', 'Napoli');
-INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Spartani', 'Via Damiano Chiesa', '20026', 'Milano');
 INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Performance', 'Via Nizza', '00198', 'Roma');
 
 --POPOLAMENTO TABELLA ABBONAMENTO
@@ -497,5 +496,49 @@ INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0092','PJNFBU58C49
 INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0091','NSVLPJ78T45B612T');
 INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0090','YVGHMH50A69A400N');
 
+
+
+--POPOLAMENTO TABELLA APPARTIENE
+INSERT INTO Appartiene(CFPersona, NomePalestra) VALUES('RFPMMZ77M03F826F','Fit For Smile');
+INSERT INTO Appartiene(CFPersona, NomePalestra) VALUES('BJKBBG63M46G859U','Fit For Smile');
+
+INSERT INTO Appartiene(CFPersona, NomePalestra) VALUES('WSOVND60D03B840T','Mondo Fitness');
+
+INSERT INTO Appartiene(CFPersona, NomePalestra) VALUES('GCRFLC57D52C449F','Level Up Via Argine');
+
+INSERT INTO Appartiene(CFPersona, NomePalestra) VALUES('MXHDLM75C44L247C','Performance');
+
+
+--POPOLAMENTO TABELLA ESERCIZIO
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Chest press', 'Pettorali');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Panca piana', 'Pettorali');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Panca inclinata', 'Pettorali');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Croci manubri', 'Pettorali');
+
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Curl manubri', 'Bicipiti');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Hammer manubri', 'Bicipiti');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Curl bilanciere', 'Bicipiti');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Concentrato manubri', 'Bicipiti');
+
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Dips', 'Tricipiti');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('French press', 'Tricipiti');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Kick back', 'Tricipiti');
+
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Alzate laterali', 'Spalle');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Spinta in alto', 'Spalle');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Military press', 'Spalle');
+
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Lat machine', 'Dorsali');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Trazioni', 'Dorsali');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Rematore bilanciere', 'Dorsali');
+
+
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Squat', 'Gambe');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg press', 'Gambe');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg extention', 'Gambe');
+INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg curl', 'Gambe');
+
+
+--POPOLAMENTO TABELLA SOTTOSCRIVE
 
 
