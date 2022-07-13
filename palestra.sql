@@ -97,7 +97,7 @@ CREATE TABLE Istruttore(
 CREATE TABLE Iscritto(
     NumeroTesseraIscritto varchar(50),
     CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
     PRIMARY KEY(CFPersona)
 );
 
@@ -460,6 +460,42 @@ INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('CrossFit','
 INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES('Sala','ELGDAE37H12I092Z');
 
 
+--RIEMPIMENTO TABELLA ISCRITTI
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0001','XNZPNJ70A05H359U');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0002','BGDFJG84D14H091Y');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0003','QYSMBY70C64A784T');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0004','HYMRMV85P59C536T');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0005','WMQTWI68D62F336E');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0006','KFGGGQ87E49B249U');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0007','BPTXDN37P61I058Y');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0008','BTLZFX93P16C346Z');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0009','FTNSJH69D19B502O');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0010','BRJHNB58D02L075B');
+
+
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0001','CQGBXU46C05H839J');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0002','QRLSST65S26D824C');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0003','MKHYWB91D53I320V');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0004','CMLNLE41L70F284N');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0005','DRLVBD37L23H118C');
+
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES(NULL,'XPZBNS41T22D012N');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES(NULL,'SMJDHK74T61Z342B');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES(NULL,'ZPDYPN62L48H196E');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES(NULL,'ZTFDSS30A12B896Q');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES(NULL,'FVPTMN90H56F087U');
+
+
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0099','PPGBBC86B59C866Z');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0098','BPNQVB94S10H034R');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0097','PRBPFT76R69H302O');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0096','VSRSLY79H54E350A');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0095','DHGGJO37L63H343W');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0094','YNHFSJ76P01C297J');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0093','CSDKRF55C48D422O');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0092','PJNFBU58C49A619P');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0091','NSVLPJ78T45B612T');
+INSERT INTO Iscritto(NumeroTesseraIscritto,CFPersona) VALUES('0090','YVGHMH50A69A400N');
 
 
 
