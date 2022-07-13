@@ -37,7 +37,6 @@ CREATE TABLE Prodotto(
     CodiceProdotto varchar(50) NOT NULL,
     NomeProdotto varchar(50) NOT NULL,
     PesoProdotto float,
-    CostoProdotto float NOT NULL,
     PRIMARY KEY(CodiceProdotto)
 );
 
@@ -45,6 +44,7 @@ CREATE TABLE Vende(
     NomePalestra varchar(50) NOT NULL,
     CodiceProdotto varchar(50) NOT NULL,
     DataVenditaProdotto date NOT NULL,
+    CostoProdotto float NOT NULL,
     FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
     FOREIGN KEY(CodiceProdotto) REFERENCES Prodotto(CodiceProdotto),
     PRIMARY KEY(NomePalestra,CodiceProdotto) 
@@ -98,15 +98,6 @@ CREATE TABLE Iscritto(
     CFPersona varchar(16) NOT NULL,
     FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
     PRIMARY KEY(CFPersona)
-);
-
-CREATE TABLE Acquista(
-    DataAcquistoProdotto date NOT NULL,
-    CodiceProdotto varchar(50) NOT NULL,
-    CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CodiceProdotto) REFERENCES Prodotto(CodiceProdotto),
-    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
-    PRIMARY KEY(CodiceProdotto,CFPersona,DataAcquistoProdotto)
 );
 
 CREATE TABLE Contratto(
@@ -243,32 +234,32 @@ INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Cros
 
 --POPOLAMENTO TABELLA SERVIZIO--
 
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('SPA','Fit For Smile',50.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Fit For Smile',35.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Ristorante','Fit For Smile',40.00)
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('SPA','Fit For Smile',50.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Fit For Smile',35.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Ristorante','Fit For Smile',40.00);
 
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Mondo Fitness',20.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Sauna','Mondo Fitness',15.00)
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Mondo Fitness',20.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Sauna','Mondo Fitness',15.00);
 
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Acque Termali','Performance',50.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Massaggio','Performance',35.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Performance',45.00)
-INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Ristorante','Performance',70.00)
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Acque Termali','Performance',50.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Massaggio','Performance',35.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Piscina','Performance',45.00);
+INSERT INTO Servizio( NomeServizio,NomePalestra,CostoServizio) VALUES ('Ristorante','Performance',70.00);
 
 --POPOLAMENTO TABELLA PRODOTTO--
 
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12530','Gatorade',2.50,500.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12533','Acqua',1.50,500.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12430','Creatine',69.99,500.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('11530','Biscotto Proteico',2.50)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('11531','Barretta Proteica',2.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12770','Powerade',2.50,500.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('17820','CocaCola',2.00,330.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('23145','Whey Proteine',120.00,1000.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('42943','Fanta',2.00,330.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('46523','Energade',3.00,1000.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12440','Monster',3.00,500.00)
-INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,CostoProdotto,PesoProdotto) VALUES('12543','Amminoacide',60.00,500.00)
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12530','Gatorade',500.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12533','Acqua',500.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12430','Creatine',500.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('11530','Biscotto Proteico',NULL);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('11531','Barretta Proteica',NULL);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12770','Powerade',500.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('17820','CocaCola',330.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('23145','Whey Proteine',1000.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('42943','Fanta',330.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('46523','Energade',1000.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12440','Monster',500.00);
+INSERT INTO Prodotto(CodiceProdotto,NomeProdotto,PesoProdotto) VALUES('12543','Amminoacide',500.00);
 
 --POPOLAMENTO TABELLA VENDE--
 
