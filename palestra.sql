@@ -12,8 +12,9 @@ CREATE TABLE Abbonamento (
    TipoAbbonamento varchar(50) NOT NULL,
    NomePalestra varchar(50) NOT NULL,
    PrezzoAbbonamento float NOT NULL,
-   FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
+   FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra) ON DELETE CASCADE,
    PRIMARY KEY(TipoAbbonamento, NomePalestra)
+   
 );
 
 CREATE TABLE Corso(
@@ -21,15 +22,16 @@ CREATE TABLE Corso(
     NomePalestra varchar(50) NOT NULL,
     DurataCorso int NOT NULL,
     CapienzaCorso int NOT NULL,
-    FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
+    FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra) ON DELETE CASCADE,
     PRIMARY KEY(NomeCorso, NomePalestra)
+    
 );
 
 CREATE TABLE Servizio(
     NomeServizio varchar(50) NOT NULL,
     NomePalestra varchar(50) NOT NULL,
     CostoServizio float NOT NULL,
-    FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
+    FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra) ON DELETE CASCADE,
     PRIMARY KEY(NomeServizio, NomePalestra)
 );
 
@@ -267,88 +269,88 @@ INSERT INTO Vende(CodiceScontrino,NomePalestra,CodiceProdotto,DataVenditaProdott
 
 
 --PROPRIETARI
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BJKBBG63M46G859U','Bernardo','Barbato','1970-02-14');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('RFPMMZ77M03F826F','Raffaele','Perrotta','1969-08-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BJKBBG63M46G859U','Bernardo','Barbato','1970-02-14');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('RFPMMZ77M03F826F','Raffaele','Perrotta','1969-08-12');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('WSOVND60D03B840T','Walter','Visconti','1980-06-01');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('WSOVND60D03B840T','Walter','Visconti','1980-06-01');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('GCRFLC57D52C449F','Giovanna','Clerici','1964-01-01');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('GCRFLC57D52C449F','Giovanna','Clerici','1964-01-01');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('MXHDLM75C44L247C','Mattia','Destro','1972-04-03');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('MXHDLM75C44L247C','Mattia','Destro','1972-04-03');
 
 --SEGRETARI
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('VGRGSD53R12A668L','Valeria','Russo','1995-05-13');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('WSMPHG89B59I108V','Simona','Perrotta','1998-07-17');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('VGRGSD53R12A668L','Valeria','Russo','1995-05-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('WSMPHG89B59I108V','Simona','Perrotta','1998-07-17');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FFDCGU00D17F148H','Flavia','Ruggiero','2000-09-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('KTYQMD89B13H043H','Antonia','Quinto','1989-01-31');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('NNPVDM57M53G331M','Nicola','Vivaldi','1999-08-15');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FFDCGU00D17F148H','Flavia','Ruggiero','2000-09-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('KTYQMD89B13H043H','Antonia','Quinto','1989-01-31');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('NNPVDM57M53G331M','Nicola','Vivaldi','1999-08-15');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('HVULBD91T51E825R','Angelo','Riccio','1984-07-17');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('THZYSS30R46C649S','Tommaso','Sansone','1996-02-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('HVULBD91T51E825R','Angelo','Riccio','1984-07-17');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('THZYSS30R46C649S','Tommaso','Sansone','1996-02-13');
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H12I002A','Francesca','Perrotta','1997-04-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDRM47H12I002A','Francesca','Perrotta','1997-04-11');
 
 --ISTRUTTORI
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H82I002A','Anselma','Trevisani','1977-12-05');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM47H12I003A','Samuele','Costa','1988-04-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DLFDRM47H12I002B','Patrizio','Genovese','1997-05-13');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDTF47H12I032C','Galdino','Endrizzi','2000-01-28');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDTF47H12I067C','Nicola','Frattesi','1997-03-28');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ADFDTF47H12I064A','Giovanna','Rullo','1991-05-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDRM47H82I002A','Anselma','Trevisani','1977-12-05');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDRM47H12I003A','Samuele','Costa','1988-04-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('DLFDRM47H12I002B','Patrizio','Genovese','1997-05-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDTF47H12I032C','Galdino','Endrizzi','2000-01-28');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDTF47H12I067C','Nicola','Frattesi','1997-03-28');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('ADFDTF47H12I064A','Giovanna','Rullo','1991-05-11');
 
 
 
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRG47H12I042A','Elio','Riccio','1999-09-13');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCHFDM47H12I421E','Bertoldo','Falasconi','1980-11-26');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FFFEEM47H12I052R','Ercole','Pinto','1997-08-03');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FWREEM47H12I162Z','Francesca','Caputo','1988-01-01');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDRG47H12I042A','Elio','Riccio','1999-09-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCHFDM47H12I421E','Bertoldo','Falasconi','1980-11-26');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FFFEEM47H12I052R','Ercole','Pinto','1997-08-03');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FWREEM47H12I162Z','Francesca','Caputo','1988-01-01');
 
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCORMA47H12I002A','Elsa','Autiero','1992-12-25');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCAMME47H12I002A','Eleonora','Marino','1979-12-31');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCORMA47H12I002A','Elsa','Autiero','1992-12-25');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCAMME47H12I002A','Eleonora','Marino','1979-12-31');
 
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDER47H12I002A','Andrea','Casale','1999-07-17');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFNFT97H12I002A','Davide','Verza','2001-09-10');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DWFDRM41H12I002A','Vincenzo','Ferragamo','1986-10-09');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDRM88E93I002A','Pasquale','Polito','1986-04-23');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FCFDAE37H12I002A','Stefano','Pollicino','1999-07-12');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ELGDAE37H12I092Z','Elena','Grimaldi','1992-07-15');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDER47H12I002A','Andrea','Casale','1999-07-17');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFNFT97H12I002A','Davide','Verza','2001-09-10');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('DWFDRM41H12I002A','Vincenzo','Ferragamo','1986-10-09');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDRM88E93I002A','Pasquale','Polito','1986-04-23');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FCFDAE37H12I002A','Stefano','Pollicino','1999-07-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('ELGDAE37H12I092Z','Elena','Grimaldi','1992-07-15');
 
 --ISCRITTI
 
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('XNZPNJ70A05H359U','Alessandra','Russo','2000-08-12');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BGDFJG84D14H091Y','Alessio','Dante','1999-07-13');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('QYSMBY70C64A784T','Alviero','Vitale','1997-07-15');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('HYMRMV85P59C536T','Almiro','Ventola','1993-07-15');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('WMQTWI68D62F336E','Antonio','Esposito','1960-05-22');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('KFGGGQ87E49B249U','Antonio','Pianese','2007-03-24');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BPTXDN37P61I058Y','Antonio','Gargiulo','2003-01-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BTLZFX93P16C346Z','Arturo','Gennarelli','2005-02-12');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FTNSJH69D19B502O','Azzurra','Diana','2000-10-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BRJHNB58D02L075B','Azzurra','Gallo','1997-11-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('CQGBXU46C05H839J','Cassandra','Santi','2001-08-09');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('QRLSST65S26D824C','Alessandra','Cinquegrana','1982-01-02');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('MKHYWB91D53I320V','Nicola','Marino','1987-08-18');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('CMLNLE41L70F284N','Giovanni','Autiero','1987-12-30');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DRLVBD37L23H118C','Teresa','Ruggiero','1991-05-30');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('XPZBNS41T22D012N','Alberto','Di Lorenzo','1976-02-06');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('SMJDHK74T61Z342B','Asia','Meret','2004-04-25');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ZPDYPN62L48H196E','Elvira','Garofalo','1995-05-28');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('ZTFDSS30A12B896Q','Elena','De Laurentis','1995-10-25');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('FVPTMN90H56F087U','Nunzia','Rana','1968-06-07');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('PPGBBC86B59C866Z','Vincenzo','Starace','1981-05-01');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('BPNQVB94S10H034R','Assunta','Insigne','1997-11-08');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('PRBPFT76R69H302O','Federico','Politano','2002-10-18');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('VSRSLY79H54E350A','Gianfranco','Spalletti','1973-12-11');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('DHGGJO37L63H343W','Ernesto','Allegri','1969-03-07');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('YNHFSJ76P01C297J','Pasquale','Conte','1994-08-23');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('CSDKRF55C48D422O','Franco','Donnarumma','1983-04-15');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('PJNFBU58C49A619P','Bartolo','Sarri','1999-11-30');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('NSVLPJ78T45B612T','Gioele','Esposito','1997-06-13');
-INSERT INTO Persona(CFPersona,NomePersona,CognomePersone,DataNascitaPersona) VALUES('YVGHMH50A69A400N','Alessandra','Rotundi','1999-07-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('XNZPNJ70A05H359U','Alessandra','Russo','2000-08-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BGDFJG84D14H091Y','Alessio','Dante','1999-07-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('QYSMBY70C64A784T','Alviero','Vitale','1997-07-15');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('HYMRMV85P59C536T','Almiro','Ventola','1993-07-15');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('WMQTWI68D62F336E','Antonio','Esposito','1960-05-22');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('KFGGGQ87E49B249U','Antonio','Pianese','2007-03-24');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BPTXDN37P61I058Y','Antonio','Gargiulo','2003-01-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BTLZFX93P16C346Z','Arturo','Gennarelli','2005-02-12');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FTNSJH69D19B502O','Azzurra','Diana','2000-10-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BRJHNB58D02L075B','Azzurra','Gallo','1997-11-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('CQGBXU46C05H839J','Cassandra','Santi','2001-08-09');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('QRLSST65S26D824C','Alessandra','Cinquegrana','1982-01-02');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('MKHYWB91D53I320V','Nicola','Marino','1987-08-18');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('CMLNLE41L70F284N','Giovanni','Autiero','1987-12-30');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('DRLVBD37L23H118C','Teresa','Ruggiero','1991-05-30');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('XPZBNS41T22D012N','Alberto','Di Lorenzo','1976-02-06');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('SMJDHK74T61Z342B','Asia','Meret','2004-04-25');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('ZPDYPN62L48H196E','Elvira','Garofalo','1995-05-28');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('ZTFDSS30A12B896Q','Elena','De Laurentis','1995-10-25');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('FVPTMN90H56F087U','Nunzia','Rana','1968-06-07');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('PPGBBC86B59C866Z','Vincenzo','Starace','1981-05-01');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('BPNQVB94S10H034R','Assunta','Insigne','1997-11-08');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('PRBPFT76R69H302O','Federico','Politano','2002-10-18');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('VSRSLY79H54E350A','Gianfranco','Spalletti','1973-12-11');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('DHGGJO37L63H343W','Ernesto','Allegri','1969-03-07');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('YNHFSJ76P01C297J','Pasquale','Conte','1994-08-23');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('CSDKRF55C48D422O','Franco','Donnarumma','1983-04-15');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('PJNFBU58C49A619P','Bartolo','Sarri','1999-11-30');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('NSVLPJ78T45B612T','Gioele','Esposito','1997-06-13');
+INSERT INTO Persona(CFPersona,NomePersona,CognomePersona,DataNascitaPersona) VALUES('YVGHMH50A69A400N','Alessandra','Rotundi','1999-07-12');
 
 
 --RIEMPIMENTO TABELLA PROPRIETARI
