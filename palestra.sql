@@ -623,3 +623,74 @@ INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,C
     VALUES('2022-05-03','2023-05-03','NSVLPJ78T45B612T','Annuale','Performance');
 INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
     VALUES('2022-06-13','2022-12-13','YVGHMH50A69A400N','Semestrale','Performance');
+
+--POPOLAMENTO TABELLA CONTRATTO SEGRETARI
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001293','2019-10-21','2021-10-21',1200.00,'VGRGSD53R12A668L');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001294','2021-10-22','2024-11-22',1350.00,'VGRGSD53R12A668L');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001295','2020-01-20','2022-10-31',1350.00,'WSMPHG89B59I108V');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64284','2019-10-04','2023-10-04',1100.00,'FFDCGU00D17F148H');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64285','2020-04-01','2022-08-01',1000.00,'KTYQMD89B13H043H');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64286','2022-05-21','2023-05-21',900.00,'NNPVDM57M53G331M');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('19284','2020-03-28','2020-09-30',600.00,'HVULBD91T51E825R');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('19288','2020-10-01','2022-10-01',1100.00,'HVULBD91T51E825R');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('19285','2022-10-21','2023-10-21',1000.00,'THZYSS30R46C649S');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55423','2021-07-02','2022-02-02',500.00,'FCFDRM47H12I002A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55424','2022-02-05','2025-02-05',900.00,'FCFDRM47H12I002A');    
+
+--POPOLAMENTO TABELLA CONTRATTO ISTRUTTORI
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001390','2021-12-02','2022-12-02',900.00,'FCFDRM47H82I002A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001391','2020-02-05','2025-02-05',900.00,'FCFDRM47H12I003A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001392','2019-01-05','2023-02-25',1000.00,'DLFDRM47H12I002B');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001393','2021-02-05','2022-12-14',700.00,'FCFDTF47H12I032C');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001394','2022-05-09','2024-02-23',900.00,'FCFDTF47H12I067C');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('001395','2022-03-17','2022-09-17',500.00,'ADFDTF47H12I064A');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64294','2018-10-15','2020-06-12',900.00,'FCFDRG47H12I042A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64298','2020-06-15','2023-04-17',1200.00,'FCFDRG47H12I042A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64295','2022-02-16','2022-08-18',1100.00,'FCHFDM47H12I421E');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64296','2021-02-05','2024-03-27',800.00,'FFFEEM47H12I052R');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('64297','2020-02-05','2022-09-13',750.00,'FWREEM47H12I162Z');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('19384','2022-02-05','2025-02-05',1000.00,'FCORMA47H12I002A');                                    --2019-08-28
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('19385','2020-05-07','2023-10-25',1000.00,'FCAMME47H12I002A');
+
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55523','2021-05-16','2022-05-15',1200.00,'FCFDER47H12I002A');    
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55524','2021-05-16','2023-09-28',1300.00,'FCFNFT97H12I002A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55525','2022-02-05','2022-10-02',800.00,'DWFDRM41H12I002A');                                    --2021-04-09
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55526','2022-03-02','2023-05-16',850.00,'FCFDRM88E93I002A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55527','2021-10-18','2022-09-15',900.00,'FCFDAE37H12I002A');
+INSERT INTO Contratto(CodiceContratto,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
+    VALUES('55528','2022-06-29S','2025-06-29',1100.00,'ELGDAE37H12I092Z');
