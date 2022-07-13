@@ -188,3 +188,52 @@ CREATE TABLE Contiene(
     FOREIGN KEY(CodiceSchedaAllenamento) REFERENCES SchedaAllenamento(CodiceSchedaAllenamento),
     PRIMARY KEY(NomeEsercizio, CodiceSchedaAllenamento)
 );
+
+
+--POPOLAMENTO TABELLA SEDE
+
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Fit For Smile', 'Via Pietro Donadio', '80021', 'Afragola');
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Mondo Fitness', 'Via Giovanni Rana', '80024', 'Cardito');
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Level Up Via Argine', 'Via Argine', '80147', 'Napoli');
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Spartani', 'Via Damiano Chiesa', '20026', 'Milano');
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Performance', 'Via Nizza', '00198', 'Roma');
+
+--POPOLAMENTO TABELLA ABBONAMENTO
+
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Mensile', 'Fit For Smile', 45.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Trimestrale', 'Fit For Smile', 120.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Annuale', 'Fit For Smile', 350.00);
+
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Mensile', 'Mondo Fitness', 20.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Semestrale', 'Mondo Fitness', 80.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Annuale', 'Mondo Fitness', 145.00);
+
+
+
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Semestrale', 'Level Up Via Argine', 75.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Annuale', 'Level Up Via Argine', 100.00);
+
+
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Mensile', 'Performance', 50.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Trimestrale', 'Performance', 120.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Semestrale', 'Performance', 200.00);
+INSERT INTO Abbonamento(TipoAbbonamento, NomePalestra, PrezzoAbbonamento) VALUES('Annuale', 'Performance', 350.00);
+
+
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Fit Boxe', 'Fit For Smile', 90, 30);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Zumba', 'Fit For Smile', 60, 50);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('CrossFit', 'Fit For Smile', 60, 15);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Pilates', 'Fit For Smile', 45, 80);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Yoga', 'Fit For Smile', 90, 30);
+
+
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Zumba', 'Mondo Fitness', 30, 15);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Pilates', 'Mondo Fitness', 60, 20);
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('Kick Boxing', 'Mondo Fitness', 90, 10);
+
+
+INSERT INTO Corso(NomeCorso,NomePalestra,DurataCorso,CapienzaCorso) VALUES('CrossFit', 'Level Up Via Argine', 60, 40);
+
+
+
+
