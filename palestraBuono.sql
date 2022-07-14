@@ -668,7 +668,7 @@ INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,Dat
 <<<<<<< HEAD:buono.sql
     VALUES('001395','Fit For Smile',TO_DATE('2022-03-17','YYYY-MM-DD'),TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
 =======
-    VALUES('001395','Fit For Smile',TO_DATE('2022-03-17,'YYYY-MM-DD')',TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
+    VALUES('001395','Fit For Smile',TO_DATE('2022-03-17','YYYY-MM-DD'),TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
 >>>>>>> 71a99f8e6bf3ea51285b7350a66ae3a5cb505fb7:palestra.sql
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
