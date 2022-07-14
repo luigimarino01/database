@@ -665,12 +665,7 @@ INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,Dat
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
     VALUES('001394','Fit For Smile',TO_DATE('2022-05-09','YYYY-MM-DD'),TO_DATE('2024-02-23','YYYY-MM-DD'),900.00,'FCFDTF47H12I067C');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-<<<<<<< HEAD:buono.sql
     VALUES('001395','Fit For Smile',TO_DATE('2022-03-17','YYYY-MM-DD'),TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
-=======
-    VALUES('001395','Fit For Smile',TO_DATE('2022-03-17','YYYY-MM-DD'),TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
->>>>>>> 71a99f8e6bf3ea51285b7350a66ae3a5cb505fb7:palestra.sql
-
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
     VALUES('64294','Mondo Fitness',TO_DATE('2018-10-15','YYYY-MM-DD'),TO_DATE('2020-06-12','YYYY-MM-DD'),900.00,'FCFDRG47H12I042A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
