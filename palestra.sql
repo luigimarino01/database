@@ -1498,8 +1498,7 @@ INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES('2022-07-09','YVGHMH50A69A400N','Acque Termali','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES('2022-07-09','PRBPFT76R69H302O','Acque Termali','Performance');
-
-
-
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-05-10','PRBPFT76R69H302O','Acque Termali','Performance');
 
 
