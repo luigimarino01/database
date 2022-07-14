@@ -627,164 +627,164 @@ INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,C
 
 --POPOLAMENTO TABELLA CONTRATTO SEGRETARI
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001293','Fit For Smile','2019-10-21','2021-10-21',1200.00,'VGRGSD53R12A668L');
+    VALUES('001293','Fit For Smile',TO_DATE('2019-10-21','YYYY-MM-DD'),TO_DATE('2021-10-21','YYYY-MM-DD'),1200.00,'VGRGSD53R12A668L');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001294','Fit For Smile','2021-10-22','2024-11-22',1350.00,'VGRGSD53R12A668L');
+    VALUES('001294','Fit For Smile',TO_DATE('2021-10-22','YYYY-MM-DD'),TO_DATE('2024-11-22','YYYY-MM-DD'),1350.00,'VGRGSD53R12A668L');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001295','Fit For Smile','2020-01-20','2022-10-31',1350.00,'WSMPHG89B59I108V');
+    VALUES('001295','Fit For Smile',TO_DATE('2020-01-20','YYYY-MM-DD'),TO_DATE('2022-10-31','YYYY-MM-DD'),1350.00,'WSMPHG89B59I108V');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64284','Mondo Fitness','2019-10-04','2023-10-04',1100.00,'FFDCGU00D17F148H');
+    VALUES('64284','Mondo Fitness',TO_DATE('2019-10-04','YYYY-MM-DD'),TO_DATE('2023-10-04','YYYY-MM-DD'),1100.00,'FFDCGU00D17F148H');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64285','Mondo Fitness','2020-04-01','2022-08-01',1000.00,'KTYQMD89B13H043H');
+    VALUES('64285','Mondo Fitness',TO_DATE('2020-04-01','YYYY-MM-DD'),TO_DATE('2022-08-01','YYYY-MM-DD'),1000.00,'KTYQMD89B13H043H');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64286','Mondo Fitness','2022-05-21','2023-05-21',900.00,'NNPVDM57M53G331M');
+    VALUES('64286','Mondo Fitness',TO_DATE('2022-05-21','YYYY-MM-DD'),TO_DATE('2023-05-21','YYYY-MM-DD'),900.00,'NNPVDM57M53G331M');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('19284','Level Up Via Argine','2020-03-28','2020-09-30',600.00,'HVULBD91T51E825R');
+    VALUES('19284','Level Up Via Argine',TO_DATE('2020-03-28','YYYY-MM-DD'),TO_DATE('2020-09-30','YYYY-MM-DD'),600.00,'HVULBD91T51E825R');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('19288','Level Up Via Argine','2020-10-01','2022-10-01',1100.00,'HVULBD91T51E825R');
+    VALUES('19288','Level Up Via Argine',TO_DATE('2020-10-01','YYYY-MM-DD'),TO_DATE('2022-10-01','YYYY-MM-DD'),1100.00,'HVULBD91T51E825R');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('19285','Level Up Via Argine','2022-10-21','2023-10-21',1000.00,'THZYSS30R46C649S');
+    VALUES('19285','Level Up Via Argine',TO_DATE('2022-10-21','YYYY-MM-DD'),TO_DATE('2023-10-21','YYYY-MM-DD'),1000.00,'THZYSS30R46C649S');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55423','Performance','2021-07-02','2022-02-02',500.00,'FCFDRM47H12I002A');
+    VALUES('55423','Performance',TO_DATE('2021-07-02','YYYY-MM-DD'),TO_DATE('2022-02-02','YYYY-MM-DD'),500.00,'FCFDRM47H12I002A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55424','Performance','2022-02-05','2025-02-05',900.00,'FCFDRM47H12I002A');    
+    VALUES('55424','Performance',TO_DATE('2022-02-05','YYYY-MM-DD'),TO_DATE('2025-02-05','YYYY-MM-DD'),900.00,'FCFDRM47H12I002A');    
 
 --POPOLAMENTO TABELLA CONTRATTO ISTRUTTORI
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001390','Fit For Smile','2021-12-02','2022-12-02',900.00,'FCFDRM47H82I002A');
+    VALUES('001390','Fit For Smile',TO_DATE('2021-12-02','YYYY-MM-DD'),TO_DATE('2022-12-02','YYYY-MM-DD'),900.00,'FCFDRM47H82I002A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001391','Fit For Smile','2020-02-05','2025-02-05',900.00,'FCFDRM47H12I003A');
+    VALUES('001391','Fit For Smile',TO_DATE('2020-02-05','YYYY-MM-DD'),TO_DATE('2025-02-05','YYYY-MM-DD'),900.00,'FCFDRM47H12I003A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001392','Fit For Smile','2019-01-05','2023-02-25',1000.00,'DLFDRM47H12I002B');
+    VALUES('001392','Fit For Smile',TO_DATE('2019-01-05','YYYY-MM-DD'),TO_DATE('2023-02-25','YYYY-MM-DD'),1000.00,'DLFDRM47H12I002B');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001393','Fit For Smile','2021-02-05','2022-12-14',700.00,'FCFDTF47H12I032C');
+    VALUES('001393','Fit For Smile',TO_DATE('2021-02-05','YYYY-MM-DD'),TO_DATE('2022-12-14','YYYY-MM-DD'),700.00,'FCFDTF47H12I032C');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001394','Fit For Smile','2022-05-09','2024-02-23',900.00,'FCFDTF47H12I067C');
+    VALUES('001394','Fit For Smile',TO_DATE('2022-05-09','YYYY-MM-DD'),TO_DATE('2024-02-23','YYYY-MM-DD'),900.00,'FCFDTF47H12I067C');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('001395','Fit For Smile','2022-03-17','2022-09-17',500.00,'ADFDTF47H12I064A');
+    VALUES('001395','Fit For Smile',TO_DATE('2022-03-17,'YYYY-MM-DD')',TO_DATE('2022-09-17','YYYY-MM-DD'),500.00,'ADFDTF47H12I064A');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64294','Mondo Fitness','2018-10-15','2020-06-12',900.00,'FCFDRG47H12I042A');
+    VALUES('64294','Mondo Fitness',TO_DATE('2018-10-15','YYYY-MM-DD'),TO_DATE('2020-06-12','YYYY-MM-DD'),900.00,'FCFDRG47H12I042A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64298','Mondo Fitness','2020-06-15','2023-04-17',1200.00,'FCFDRG47H12I042A');
+    VALUES('64298','Mondo Fitness',TO_DATE('2020-06-15','YYYY-MM-DD'),TO_DATE('2023-04-17','YYYY-MM-DD'),1200.00,'FCFDRG47H12I042A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64295','Mondo Fitness','2022-02-16','2022-08-18',1100.00,'FCHFDM47H12I421E');
+    VALUES('64295','Mondo Fitness',TO_DATE('2022-02-16','YYYY-MM-DD'),TO_DATE('2022-08-18','YYYY-MM-DD'),1100.00,'FCHFDM47H12I421E');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64296','Mondo Fitness','2021-02-05','2024-03-27',800.00,'FFFEEM47H12I052R');
+    VALUES('64296','Mondo Fitness',TO_DATE('2021-02-05','YYYY-MM-DD'),TO_DATE('2024-03-27','YYYY-MM-DD'),800.00,'FFFEEM47H12I052R');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('64297','Mondo Fitness','2020-02-05','2022-09-13',750.00,'FWREEM47H12I162Z');
+    VALUES('64297','Mondo Fitness',TO_DATE('2020-02-05','YYYY-MM-DD'),TO_DATE('2022-09-13','YYYY-MM-DD'),750.00,'FWREEM47H12I162Z');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('19384','Level Up Via Argine','2022-02-05','2025-02-05',1000.00,'FCORMA47H12I002A');                                    
+    VALUES('19384','Level Up Via Argine',TO_DATE('2022-02-05','YYYY-MM-DD'),TO_DATE('2025-02-05','YYYY-MM-DD'),1000.00,'FCORMA47H12I002A');                                    
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('19385','Level Up Via Argine','2020-05-07','2023-10-25',1000.00,'FCAMME47H12I002A');
+    VALUES('19385','Level Up Via Argine',TO_DATE('2020-05-07','YYYY-MM-DD'),TO_DATE('2023-10-25','YYYY-MM-DD'),1000.00,'FCAMME47H12I002A');
 
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55523','Performance','2021-05-16','2022-05-15',1200.00,'FCFDER47H12I002A');    
+    VALUES('55523','Performance',TO_DATE('2021-05-16','YYYY-MM-DD'),TO_DATE('2022-05-15','YYYY-MM-DD'),1200.00,'FCFDER47H12I002A');    
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55524','Performance','2021-05-16','2023-09-28',1300.00,'FCFNFT97H12I002A');
+    VALUES('55524','Performance',TO_DATE('2021-05-16','YYYY-MM-DD'),TO_DATE('2023-09-28','YYYY-MM-DD'),1300.00,'FCFNFT97H12I002A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55525','Performance','2022-02-05','2022-10-02',800.00,'DWFDRM41H12I002A');                                    
+    VALUES('55525','Performance',TO_DATE('2022-02-05','YYYY-MM-DD'),TO_DATE('2022-10-02','YYYY-MM-DD'),800.00,'DWFDRM41H12I002A');                                    
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55526','Performance','2022-03-02','2023-05-16',850.00,'FCFDRM88E93I002A');
+    VALUES('55526','Performance',TO_DATE('2022-03-02','YYYY-MM-DD'),TO_DATE('2023-05-16','YYYY-MM-DD'),850.00,'FCFDRM88E93I002A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55527','Performance','2021-10-18','2022-09-15',900.00,'FCFDAE37H12I002A');
+    VALUES('55527','Performance',TO_DATE('2021-10-18','YYYY-MM-DD'),TO_DATE('2022-09-15','YYYY-MM-DD'),900.00,'FCFDAE37H12I002A');
 INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-    VALUES('55528','Performance','2022-06-29S','2025-06-29',1100.00,'ELGDAE37H12I092Z');
+    VALUES('55528','Performance',TO_DATE('2022-06-29','YYYY-MM-DD'),TO_DATE('2025-06-29','YYYY-MM-DD'),1100.00,'ELGDAE37H12I092Z');
 
 
     --POPOLAMENTO TABELLA SCHEDA ALLENAMENTO
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0001','2022-07-10','XNZPNJ70A05H359U','ADFDTF47H12I064A');
+    VALUES('0001',TO_DATE('2022-07-10','YYYY-MM-DD'),'XNZPNJ70A05H359U','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0004','2022-10-10','XNZPNJ70A05H359U','ADFDTF47H12I064A');
+    VALUES('0004',TO_DATE('2022-10-10','YYYY-MM-DD'),'XNZPNJ70A05H359U','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0002','2022-10-15','BGDFJG84D14H091Y','ADFDTF47H12I064A');
+    VALUES('0002',TO_DATE('2022-10-15','YYYY-MM-DD'),'BGDFJG84D14H091Y','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0003','2022-10-22','QYSMBY70C64A784T','ADFDTF47H12I064A');
+    VALUES('0003',TO_DATE('2022-10-22','YYYY-MM-DD'),'QYSMBY70C64A784T','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0005','2022-10-04','HYMRMV85P59C536T','ADFDTF47H12I064A');
+    VALUES('0005',TO_DATE('2022-10-04','YYYY-MM-DD'),'HYMRMV85P59C536T','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0006','2022-10-09','WMQTWI68D62F336E','ADFDTF47H12I064A');
+    VALUES('0006',TO_DATE('2022-10-09','YYYY-MM-DD'),'WMQTWI68D62F336E','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0007','2022-06-09','KFGGGQ87E49B249U','ADFDTF47H12I064A');
+    VALUES('0007',TO_DATE('2022-06-09','YYYY-MM-DD'),'KFGGGQ87E49B249U','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0008','2022-08-09','KFGGGQ87E49B249U','ADFDTF47H12I064A');
+    VALUES('0008',TO_DATE('2022-08-09','YYYY-MM-DD'),'KFGGGQ87E49B249U','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0009','2022-10-05','BPTXDN37P61I058Y','ADFDTF47H12I064A');
+    VALUES('0009',TO_DATE('2022-10-05','YYYY-MM-DD'),'BPTXDN37P61I058Y','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0010','2022-10-12','BTLZFX93P16C346Z','ADFDTF47H12I064A');
+    VALUES('0010',TO_DATE('2022-10-12','YYYY-MM-DD'),'BTLZFX93P16C346Z','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0011','2022-10-19','FTNSJH69D19B502O','ADFDTF47H12I064A');
+    VALUES('0011',TO_DATE('2022-10-19','YYYY-MM-DD'),'FTNSJH69D19B502O','ADFDTF47H12I064A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0012','2022-10-27','BRJHNB58D02L075B','ADFDTF47H12I064A');
+    VALUES('0012',TO_DATE('2022-10-27','YYYY-MM-DD'),'BRJHNB58D02L075B','ADFDTF47H12I064A');
 
 
 
 
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0043','2022-03-12','CQGBXU46C05H839J','FWREEM47H12I162Z');
+    VALUES('0043',TO_DATE('2022-03-12','YYYY-MM-DD'),'CQGBXU46C05H839J','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0017','2022-04-12','CQGBXU46C05H839J','FWREEM47H12I162Z');
+    VALUES('0017',TO_DATE('2022-04-12','YYYY-MM-DD'),'CQGBXU46C05H839J','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0041','2022-05-12','CQGBXU46C05H839J','FWREEM47H12I162Z');
+    VALUES('0041',TO_DATE('2022-05-12','YYYY-MM-DD'),'CQGBXU46C05H839J','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0035','2022-08-05','CQGBXU46C05H839J','FWREEM47H12I162Z');
+    VALUES('0035',TO_DATE('2022-08-05','YYYY-MM-DD'),'CQGBXU46C05H839J','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0018','2022-07-28','QRLSST65S26D824C','FWREEM47H12I162Z');
+    VALUES('0018',TO_DATE('2022-07-28','YYYY-MM-DD'),'QRLSST65S26D824C','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0071','2022-06-20','MKHYWB91D53I320V','FWREEM47H12I162Z');
+    VALUES('0071',TO_DATE('2022-06-20','YYYY-MM-DD'),'MKHYWB91D53I320V','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0020','2022-07-20','MKHYWB91D53I320V','FWREEM47H12I162Z');
+    VALUES('0020',TO_DATE('2022-07-20','YYYY-MM-DD'),'MKHYWB91D53I320V','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0019','2022-07-29','CMLNLE41L70F284N','FWREEM47H12I162Z');
+    VALUES('0019',TO_DATE('2022-07-29','YYYY-MM-DD'),'CMLNLE41L70F284N','FWREEM47H12I162Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0033','2022-08-01','DRLVBD37L23H118C','FWREEM47H12I162Z');
+    VALUES('0033',TO_DATE('2022-08-01','YYYY-MM-DD'),'DRLVBD37L23H118C','FWREEM47H12I162Z');
 
 
 
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0099','2022-09-01','XPZBNS41T22D012N','FCAMME47H12I002A');
+    VALUES('0099',TO_DATE('2022-09-01','YYYY-MM-DD'),'XPZBNS41T22D012N','FCAMME47H12I002A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0097','2022-08-21','SMJDHK74T61Z342B','FCAMME47H12I002A');
+    VALUES('0097',TO_DATE('2022-08-21','YYYY-MM-DD'),'SMJDHK74T61Z342B','FCAMME47H12I002A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0098','2022-08-11','ZPDYPN62L48H196E','FCAMME47H12I002A');
+    VALUES('0098',TO_DATE('2022-08-11','YYYY-MM-DD'),'ZPDYPN62L48H196E','FCAMME47H12I002A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0048','2022-07-30','ZTFDSS30A12B896Q','FCAMME47H12I002A');
+    VALUES('0048',TO_DATE('2022-07-30','YYYY-MM-DD'),'ZTFDSS30A12B896Q','FCAMME47H12I002A');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0100','2022-08-21','FVPTMN90H56F087U','FCAMME47H12I002A');
+    VALUES('0100',TO_DATE('2022-08-21','YYYY-MM-DD'),'FVPTMN90H56F087U','FCAMME47H12I002A');
 
 
 
 
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0101','2022-08-11','PPGBBC86B59C866Z','ELGDAE37H12I092Z');
+    VALUES('0101',TO_DATE('2022-08-11','YYYY-MM-DD'),'PPGBBC86B59C866Z','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0111','2022-07-31','BPNQVB94S10H034R','ELGDAE37H12I092Z');
+    VALUES('0111',TO_DATE('2022-07-31','YYYY-MM-DD'),'BPNQVB94S10H034R','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0122','2022-08-03','PRBPFT76R69H302O','ELGDAE37H12I092Z');
+    VALUES('0122',TO_DATE('2022-08-03','YYYY-MM-DD'),'PRBPFT76R69H302O','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0133','2022-08-04','VSRSLY79H54E350A','ELGDAE37H12I092Z');
+    VALUES('0133',TO_DATE('2022-08-04','YYYY-MM-DD'),'VSRSLY79H54E350A','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0444','2022-08-15','DHGGJO37L63H343W','ELGDAE37H12I092Z');
+    VALUES('0444',TO_DATE('2022-08-15','YYYY-MM-DD'),'DHGGJO37L63H343W','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0155','2022-07-29','YNHFSJ76P01C297J','ELGDAE37H12I092Z');
+    VALUES('0155',TO_DATE('2022-07-29','YYYY-MM-DD'),'YNHFSJ76P01C297J','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0666','2022-07-30','CSDKRF55C48D422O','ELGDAE37H12I092Z');
+    VALUES('0666',TO_DATE('2022-07-30','YYYY-MM-DD'),'CSDKRF55C48D422O','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0392','2022-08-10','PJNFBU58C49A619P','ELGDAE37H12I092Z');
+    VALUES('0392',TO_DATE('2022-08-10','YYYY-MM-DD'),'PJNFBU58C49A619P','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0888','2022-06-20','NSVLPJ78T45B612T','ELGDAE37H12I092Z');
+    VALUES('0888',TO_DATE('2022-06-20','YYYY-MM-DD'),'NSVLPJ78T45B612T','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0199','2022-08-01','NSVLPJ78T45B612T','ELGDAE37H12I092Z');
+    VALUES('0199',TO_DATE('2022-08-01','YYYY-MM-DD'),'NSVLPJ78T45B612T','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0121','2022-07-10','YVGHMH50A69A400N','ELGDAE37H12I092Z');
+    VALUES('0121',TO_DATE('2022-07-10','YYYY-MM-DD'),'YVGHMH50A69A400N','ELGDAE37H12I092Z');
 INSERT INTO Schedaallenamento(CodiceSchedaAllenamento,ScadenzaSchedaAllenamento,CFPersonaIscritto,CFPersonaIstruttore)
-    VALUES('0142','2022-08-15','YVGHMH50A69A400N','ELGDAE37H12I092Z');
+    VALUES('0142',TO_DATE('2022-08-15','YYYY-MM-DD'),'YVGHMH50A69A400N','ELGDAE37H12I092Z');
 
 
 --POPOLAMENTO TABELLA CONTIENE
@@ -1262,61 +1262,61 @@ INSERT INTO Contiene(Serie, Ripetizioni, NomeEsercizio, CodiceSchedaAllenamento)
 --POPOLAMENTO TABELLA PRENOTAZIONE
 
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0001','2022-07-11','BGDFJG84D14H091Y','Zumba','Fit For Smile');
+    VALUES('0001',TO_DATE('2022-07-11','YYYY-MM-DD'),'BGDFJG84D14H091Y','Zumba','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0002','2022-07-13','BGDFJG84D14H091Y','Pilates','Fit For Smile');
+    VALUES('0002',TO_DATE('2022-07-13','YYYY-MM-DD'),'BGDFJG84D14H091Y','Pilates','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0003','2022-07-11','KFGGGQ87E49B249U','Zumba','Fit For Smile');
+    VALUES('0003',TO_DATE('2022-07-11','YYYY-MM-DD'),'KFGGGQ87E49B249U','Zumba','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0004','2022-07-09','BGDFJG84D14H091Y','Fit Boxe','Fit For Smile');
+    VALUES('0004',TO_DATE('2022-07-09','YYYY-MM-DD'),'BGDFJG84D14H091Y','Fit Boxe','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0005','2022-07-08','FTNSJH69D19B502O','Yoga','Fit For Smile');
+    VALUES('0005',TO_DATE('2022-07-08','YYYY-MM-DD'),'FTNSJH69D19B502O','Yoga','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0006','2022-07-14','BRJHNB58D02L075B','CrossFit','Fit For Smile');
+    VALUES('0006',TO_DATE('2022-07-14','YYYY-MM-DD'),'BRJHNB58D02L075B','CrossFit','Fit For Smile');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0007','2022-07-15','WMQTWI68D62F336E','Pilates','Fit For Smile');
+    VALUES('0007',TO_DATE('2022-07-15','YYYY-MM-DD'),'WMQTWI68D62F336E','Pilates','Fit For Smile');
 
 
 
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0099','2022-07-01','SMJDHK74T61Z342B','CrossFit','Level Up Via Argine');
+    VALUES('0099',TO_DATE('2022-07-01','YYYY-MM-DD'),'SMJDHK74T61Z342B','CrossFit','Level Up Via Argine');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0100','2022-07-01','ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
+    VALUES('0100',TO_DATE('2022-07-01','YYYY-MM-DD'),'ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0111','2022-07-04','ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
+    VALUES('0111',TO_DATE('2022-07-04','YYYY-MM-DD'),'ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0112','2022-07-06','FVPTMN90H56F087U','CrossFit','Level Up Via Argine');
+    VALUES('0112',TO_DATE('2022-07-06','YYYY-MM-DD'),'FVPTMN90H56F087U','CrossFit','Level Up Via Argine');
 
 
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0600','2022-07-18','VSRSLY79H54E350A','Kick Boxing','Performance');
+    VALUES('0600',TO_DATE('2022-07-18','YYYY-MM-DD'),'VSRSLY79H54E350A','Kick Boxing','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0601','2022-07-14','FVPTMN90H56F087U','CrossFit','Performance');
+    VALUES('0601',TO_DATE('2022-07-14','YYYY-MM-DD'),'FVPTMN90H56F087U','CrossFit','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0602','2022-07-13','NSVLPJ78T45B612T','Zumba','Performance');
+    VALUES('0602',TO_DATE('2022-07-13','YYYY-MM-DD'),'NSVLPJ78T45B612T','Zumba','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0603','2022-07-16','PJNFBU58C49A619P','Boxe','Performance');
+    VALUES('0603',TO_DATE('2022-07-16','YYYY-MM-DD'),'PJNFBU58C49A619P','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0604','2022-07-16','YVGHMH50A69A400N','Boxe','Performance');
+    VALUES('0604',TO_DATE('2022-07-16','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0605','2022-07-21','YVGHMH50A69A400N','Boxe','Performance');
+    VALUES('0605',TO_DATE('2022-07-21','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 
 
 
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0700','2022-07-13','QRLSST65S26D824C','Kick Boxing','Mondo Fitness');
+    VALUES('0700',TO_DATE('2022-07-13','YYYY-MM-DD'),'QRLSST65S26D824C','Kick Boxing','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0701','2022-07-13','MKHYWB91D53I320V','Kick Boxing','Mondo Fitness');
+    VALUES('0701',TO_DATE('2022-07-13','YYYY-MM-DD'),'MKHYWB91D53I320V','Kick Boxing','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0702','2022-07-18','CMLNLE41L70F284N','Zumba','Mondo Fitness');
+    VALUES('0702',TO_DATE('2022-07-18','YYYY-MM-DD'),'CMLNLE41L70F284N','Zumba','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0703','2022-07-18','CQGBXU46C05H839J','Zumba','Mondo Fitness');
+    VALUES('0703',TO_DATE('2022-07-18','YYYY-MM-DD'),'CQGBXU46C05H839J','Zumba','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0704','2022-07-23','DRLVBD37L23H118C','Pilates','Mondo Fitness');
+    VALUES('0704',TO_DATE('2022-07-23','YYYY-MM-DD'),'DRLVBD37L23H118C','Pilates','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0705','2022-07-23','CMLNLE41L70F284N','Pilates','Mondo Fitness');
+    VALUES('0705',TO_DATE('2022-07-23','YYYY-MM-DD'),'CMLNLE41L70F284N','Pilates','Mondo Fitness');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0706','2022-07-23','QRLSST65S26D824C','Pilates','Mondo Fitness');
+    VALUES('0706',TO_DATE('2022-07-23','YYYY-MM-DD'),'QRLSST65S26D824C','Pilates','Mondo Fitness');
 
 
 
@@ -1423,82 +1423,82 @@ INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomeP
 
 --POPOLAMENTO TABELLA ACCEDE
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-13','BGDFJG84D14H091Y','Piscina','Fit For Smile');
+    VALUES(TO_DATE('2022-07-13','YYYY-MM-DD'),'BGDFJG84D14H091Y','Piscina','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-11','KFGGGQ87E49B249U','Piscina','Fit For Smile');
+    VALUES(TO_DATE('2022-07-11','YYYY-MM-DD'),'KFGGGQ87E49B249U','Piscina','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-10','XNZPNJ70A05H359U','Piscina','Fit For Smile');
+    VALUES(TO_DATE('2022-07-10','YYYY-MM-DD'),'XNZPNJ70A05H359U','Piscina','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-03','BGDFJG84D14H091Y','Piscina','Fit For Smile');
+    VALUES(TO_DATE('2022-07-03','YYYY-MM-DD'),'BGDFJG84D14H091Y','Piscina','Fit For Smile');
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-12','WMQTWI68D62F336E','Ristorante','Fit For Smile');
+    VALUES(TO_DATE('2022-07-12','YYYY-MM-DD'),'WMQTWI68D62F336E','Ristorante','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-13','XNZPNJ70A05H359U','Ristorante','Fit For Smile');
+    VALUES(TO_DATE('2022-07-13','YYYY-MM-DD'),'XNZPNJ70A05H359U','Ristorante','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-14','BTLZFX93P16C346Z','Ristorante','Fit For Smile');
+    VALUES(TO_DATE('2022-07-14','YYYY-MM-DD'),'BTLZFX93P16C346Z','Ristorante','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-14','QYSMBY70C64A784T','Ristorante','Fit For Smile');
-
-
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-06','XNZPNJ70A05H359U','SPA','Fit For Smile');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-10','QYSMBY70C64A784T','SPA','Fit For Smile');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-22','WMQTWI68D62F336E','SPA','Fit For Smile');
+    VALUES(TO_DATE('2022-07-14','YYYY-MM-DD'),'QYSMBY70C64A784T','Ristorante','Fit For Smile');
 
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-29','MKHYWB91D53I320V','Piscina','Mondo Fitness');
+    VALUES(TO_DATE('2022-07-06','YYYY-MM-DD'),'XNZPNJ70A05H359U','SPA','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-22','QRLSST65S26D824C','Piscina','Mondo Fitness');
+    VALUES(TO_DATE('2022-06-10','YYYY-MM-DD'),'QYSMBY70C64A784T','SPA','Fit For Smile');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-03','CQGBXU46C05H839J','Piscina','Mondo Fitness');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-01','CMLNLE41L70F284N','Piscina','Mondo Fitness');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-26','DRLVBD37L23H118C','Piscina','Mondo Fitness');
-
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-13','DRLVBD37L23H118C','Sauna','Mondo Fitness');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-15','CMLNLE41L70F284N','Sauna','Mondo Fitness');
-INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-04','MKHYWB91D53I320V','Sauna','Mondo Fitness');
-
+    VALUES(TO_DATE('2022-06-22','YYYY-MM-DD'),'WMQTWI68D62F336E','SPA','Fit For Smile');
 
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-04','YVGHMH50A69A400N','Ristorante','Performance');
+    VALUES(TO_DATE('2022-06-29','YYYY-MM-DD'),'MKHYWB91D53I320V','Piscina','Mondo Fitness');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-04','BPNQVB94S10H034R','Ristorante','Performance');
+    VALUES(TO_DATE('2022-06-22','YYYY-MM-DD'),'QRLSST65S26D824C','Piscina','Mondo Fitness');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-10','CSDKRF55C48D422O','Ristorante','Performance');
+    VALUES(TO_DATE('2022-07-03','YYYY-MM-DD'),'CQGBXU46C05H839J','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-01','YYYY-MM-DD'),'CMLNLE41L70F284N','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-06-26','YYYY-MM-DD'),'DRLVBD37L23H118C','Piscina','Mondo Fitness');
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-12','DHGGJO37L63H343w','Massaggio','Performance');
+    VALUES(TO_DATE('2022-06-13','YYYY-MM-DD'),'DRLVBD37L23H118C','Sauna','Mondo Fitness');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-01','YNHFSJ76P01C297J','Massaggio','Performance');
+    VALUES(TO_DATE('2022-06-15','YYYY-MM-DD'),'CMLNLE41L70F284N','Sauna','Mondo Fitness');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-03','NSVLPJ78T45B612T','Massaggio','Performance');
+    VALUES(TO_DATE('2022-07-04','YYYY-MM-DD'),'MKHYWB91D53I320V','Sauna','Mondo Fitness');
+
+
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-27','VSRSLY79H54E350A','Piscina','Performance');
+    VALUES(TO_DATE('2022-07-04','YYYY-MM-DD'),'YVGHMH50A69A400N','Ristorante','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-13','PRBPFT76R69H302O','Piscina','Performance');
+    VALUES(TO_DATE('2022-07-04','YYYY-MM-DD'),'BPNQVB94S10H034R','Ristorante','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-10','YYYY-MM-DD'),'CSDKRF55C48D422O','Ristorante','Performance');
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-06-29','DHGGJO37L63H343w','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-07-12','YYYY-MM-DD'),'DHGGJO37L63H343w','Massaggio','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-02','BPNQVB94S10H034R','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-07-01','YYYY-MM-DD'),'YNHFSJ76P01C297J','Massaggio','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-08','NSVLPJ78T45B612T','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-07-03','YYYY-MM-DD'),'NSVLPJ78T45B612T','Massaggio','Performance');
+
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-09','YVGHMH50A69A400N','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-06-27','YYYY-MM-DD'),'VSRSLY79H54E350A','Piscina','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-07-09','PRBPFT76R69H302O','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-07-13','YYYY-MM-DD'),'PRBPFT76R69H302O','Piscina','Performance');
+
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES('2022-05-10','PRBPFT76R69H302O','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-06-29','YYYY-MM-DD'),'DHGGJO37L63H343w','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-02','YYYY-MM-DD'),'BPNQVB94S10H034R','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-08','YYYY-MM-DD'),'NSVLPJ78T45B612T','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-09','YYYY-MM-DD'),'YVGHMH50A69A400N','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-07-09','YYYY-MM-DD'),'PRBPFT76R69H302O','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES(TO_DATE('2022-05-10','YYYY-MM-DD'),'PRBPFT76R69H302O','Acque Termali','Performance');
 
 
