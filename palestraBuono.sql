@@ -1482,7 +1482,7 @@ INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES(TO_DATE('2022-07-10','YYYY-MM-DD'),'CSDKRF55C48D422O','Ristorante','Performance');
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES(TO_DATE('2022-07-12','YYYY-MM-DD'),'DHGGJO37L63H343w','Massaggio','Performance');
+    VALUES(TO_DATE('2022-07-12','YYYY-MM-DD'),'DHGGJO37L63H343W','Massaggio','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES(TO_DATE('2022-07-01','YYYY-MM-DD'),'YNHFSJ76P01C297J','Massaggio','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
@@ -1494,7 +1494,7 @@ INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES(TO_DATE('2022-07-13','YYYY-MM-DD'),'PRBPFT76R69H302O','Piscina','Performance');
 
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
-    VALUES(TO_DATE('2022-06-29','YYYY-MM-DD'),'DHGGJO37L63H343w','Acque Termali','Performance');
+    VALUES(TO_DATE('2022-06-29','YYYY-MM-DD'),'DHGGJO37L63H343W','Acque Termali','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
     VALUES(TO_DATE('2022-07-02','YYYY-MM-DD'),'BPNQVB94S10H034R','Acque Termali','Performance');
 INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
