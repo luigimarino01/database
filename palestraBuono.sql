@@ -1,4 +1,4 @@
-CREATE DATABASE Palestra;
+CREATE DATABASE gestionePalestra;
 
 CREATE TABLE Sede (
     NomePalestra varchar(50) NOT NULL,
