@@ -1300,14 +1300,14 @@ INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCo
 =======
     VALUES('0601',TO_DATE('2022-07-14','YYYY-MM-DD'),'FVPTMN90H56F087U','CrossFit','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0602',TO_DATE('2022-07-13','YYYY-MM-DD'),'NSVLPJ78T45B612T','Zumba','Performance');
+    VALUES('0605',TO_DATE('2022-07-13','YYYY-MM-DD'),'NSVLPJ78T45B612T','Zumba','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0603',TO_DATE('2022-07-16','YYYY-MM-DD'),'PJNFBU58C49A619P','Boxe','Performance');
+    VALUES('0606',TO_DATE('2022-07-16','YYYY-MM-DD'),'PJNFBU58C49A619P','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('0604',TO_DATE('2022-07-16','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
+    VALUES('0607',TO_DATE('2022-07-16','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
 >>>>>>> 71a99f8e6bf3ea51285b7350a66ae3a5cb505fb7:palestra.sql
-    VALUES('0605',TO_DATE('2022-07-21','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
+    VALUES('0608',TO_DATE('2022-07-21','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 
 
 
