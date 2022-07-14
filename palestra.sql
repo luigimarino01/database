@@ -134,12 +134,11 @@ CREATE TABLE Conduce(
     NomePalestra varchar (50) NOT NULL,
     FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona),
     FOREIGN KEY(NomeCorso,NomePalestra) REFERENCES Corso(NomeCorso,NomePalestra),
-    PRIMARY KEY(GiornoConduzione,OraConduzione)
+    PRIMARY KEY(GiornoConduzione,OraConduzione,NomePalestra)
 );
 
 CREATE TABLE Accede(
     DataAccesso date NOT NULL,
-    CostoServizio float NOT NULL,
     CFPersona varchar(16) NOT NULL,
     NomeServizio varchar(50) NOT NULL,
     NomePalestra varchar(50) NOT NULL,
@@ -1260,7 +1259,245 @@ INSERT INTO Contiene(Serie, Ripetizioni, NomeEsercizio, CodiceSchedaAllenamento)
 INSERT INTO Contiene(Serie, Ripetizioni, NomeEsercizio, CodiceSchedaAllenamento)
     VALUES(4,12,'Panca inclinata','0101');
 
+--POPOLAMENTO TABELLA PRENOTAZIONE
 
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0001','2022-07-11','BGDFJG84D14H091Y','Zumba','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0002','2022-07-13','BGDFJG84D14H091Y','Pilates','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0003','2022-07-11','KFGGGQ87E49B249U','Zumba','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0004','2022-07-09','BGDFJG84D14H091Y','Fit Boxe','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0005','2022-07-08','FTNSJH69D19B502O','Yoga','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0006','2022-07-14','BRJHNB58D02L075B','CrossFit','Fit For Smile');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0007','2022-07-15','WMQTWI68D62F336E','Pilates','Fit For Smile');
+
+
+
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0099','2022-07-01','SMJDHK74T61Z342B','CrossFit','Level Up Via Argine');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0100','2022-07-01','ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0111','2022-07-04','ZTFDSS30A12B896Q','CrossFit','Level Up Via Argine');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0112','2022-07-06','FVPTMN90H56F087U','CrossFit','Level Up Via Argine');
+
+
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0600','2022-07-18','VSRSLY79H54E350A','Kick Boxing','Performance');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0601','2022-07-14','FVPTMN90H56F087U','CrossFit','Performance');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0602','2022-07-13','NSVLPJ78T45B612T','Zumba','Performance');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0603','2022-07-16','PJNFBU58C49A619P','Boxe','Performance');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0604','2022-07-16','YVGHMH50A69A400N','Boxe','Performance');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0605','2022-07-21','YVGHMH50A69A400N','Boxe','Performance');
+
+
+
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0700','2022-07-13','QRLSST65S26D824C','Kick Boxing','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0701','2022-07-13','MKHYWB91D53I320V','Kick Boxing','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0702','2022-07-18','CMLNLE41L70F284N','Zumba','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0703','2022-07-18','CQGBXU46C05H839J','Zumba','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0704','2022-07-23','DRLVBD37L23H118C','Pilates','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0705','2022-07-23','CMLNLE41L70F284N','Pilates','Mondo Fitness');
+INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('0706','2022-07-23','QRLSST65S26D824C','Pilates','Mondo Fitness');
+
+
+
+
+
+--POPOLAMENTO TABELLA CONDUCE
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','16','FCFDRM47H82I002A','Zumba','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','18','FCFDRM47H82I002A','Zumba','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','15','FCFDRM47H82I002A','Zumba','Fit For Smile');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','09','FCFDTF47H12I032C','Pilates','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','10','FCFDTF47H12I032C','Pilates','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','18','FCFDTF47H12I032C','Pilates','Fit For Smile');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','17','FCFDRM47H12I003A','Fit Boxe','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','17','FCFDRM47H12I003A','Fit Boxe','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Sabato','17','FCFDRM47H12I003A','Fit Boxe','Fit For Smile');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','11','FCFDTF47H12I067C','Yoga','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','19','FCFDTF47H12I067C','Yoga','Fit For Smile');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','12','DLFDRM47H12I002B','CrossFit','Fit For Smile');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','12','DLFDRM47H12I002B','CrossFit','Fit For Smile');
+
+
+
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
+
+
+
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','18','FCFDAE37H12I002A','CrossFit','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','18','FCFDAE37H12I002A','CrossFit','Performance');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','21','FCFDRM88E93I002A','Kick Boxing','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','21','FCFDRM88E93I002A','Kick Boxing','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','21','FCFDRM88E93I002A','Kick Boxing','Performance');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','10','FCFNFT97H12I002A','Zumba','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','10','FCFNFT97H12I002A','Zumba','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','10','FCFNFT97H12I002A','Zumba','Performance');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','19','DWFDRM41H12I002A','Boxe','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','19','DWFDRM41H12I002A','Boxe','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Sabato','19','DWFDRM41H12I002A','Boxe','Performance');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','15','FCFDER47H12I002A','Pilates','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','15','FCFDER47H12I002A','Pilates','Performance');
+    
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','21','FCFDRG47H12I042A','Kick Boxing','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','21','FCFDRG47H12I042A','Kick Boxing','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','21','FCFDRG47H12I042A','Kick Boxing','Mondo Fitness');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','15','FCHFDM47H12I421E','Pilates','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','15','FCHFDM47H12I421E','Pilates','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Sabato','15','FCHFDM47H12I421E','Pilates','Mondo Fitness');
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Lunedi','10','FFFEEM47H12I052R','Zumba','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Mercoledi','10','FFFEEM47H12I052R','Zumba','Mondo Fitness');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','10','FFFEEM47H12I052R','Zumba','Mondo Fitness');
+
+
+--POPOLAMENTO TABELLA ACCEDE
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-13','BGDFJG84D14H091Y','Piscina','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-11','KFGGGQ87E49B249U','Piscina','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-10','XNZPNJ70A05H359U','Piscina','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-03','BGDFJG84D14H091Y','Piscina','Fit For Smile');
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-12','WMQTWI68D62F336E','Ristorante','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-13','XNZPNJ70A05H359U','Ristorante','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-14','BTLZFX93P16C346Z','Ristorante','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-14','QYSMBY70C64A784T','Ristorante','Fit For Smile');
+
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-06','XNZPNJ70A05H359U','SPA','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-10','QYSMBY70C64A784T','SPA','Fit For Smile');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-22','WMQTWI68D62F336E','SPA','Fit For Smile');
+
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-29','MKHYWB91D53I320V','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-22','QRLSST65S26D824C','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-03','CQGBXU46C05H839J','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-01','CMLNLE41L70F284N','Piscina','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-26','DRLVBD37L23H118C','Piscina','Mondo Fitness');
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-13','DRLVBD37L23H118C','Sauna','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-15','CMLNLE41L70F284N','Sauna','Mondo Fitness');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-04','MKHYWB91D53I320V','Sauna','Mondo Fitness');
+
+
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-04','YVGHMH50A69A400N','Ristorante','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-04','BPNQVB94S10H034R','Ristorante','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-10','CSDKRF55C48D422O','Ristorante','Performance');
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-12','DHGGJO37L63H343w','Massaggio','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-01','YNHFSJ76P01C297J','Massaggio','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-03','NSVLPJ78T45B612T','Massaggio','Performance');
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-27','VSRSLY79H54E350A','Piscina','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-13','PRBPFT76R69H302O','Piscina','Performance');
+
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-06-29','DHGGJO37L63H343w','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-02','BPNQVB94S10H034R','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-08','NSVLPJ78T45B612T','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-09','YVGHMH50A69A400N','Acque Termali','Performance');
+INSERT INTO Accede(DataAccesso,CFPersona,NomeServizio,NomePalestra)
+    VALUES('2022-07-09','PRBPFT76R69H302O','Acque Termali','Performance');
 
 
 
