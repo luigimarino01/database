@@ -1290,15 +1290,13 @@ INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCo
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
     VALUES('0600',TO_DATE('2022-07-18','YYYY-MM-DD'),'VSRSLY79H54E350A','Kick Boxing','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-<<<<<<< HEAD:buono.sql
     VALUES('0602',TO_DATE('2022-07-13','YYYY-MM-DD'),'NSVLPJ78T45B612T','Zumba','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
     VALUES('0603',TO_DATE('2022-07-16','YYYY-MM-DD'),'PJNFBU58C49A619P','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
     VALUES('0604',TO_DATE('2022-07-16','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
-=======
-    VALUES('0601',TO_DATE('2022-07-14','YYYY-MM-DD'),'FVPTMN90H56F087U','CrossFit','Performance');
+    VALUES('0601',TO_DATE('2022-07-14','YYYY-MM-DD'),'FVPTMN90H56F087U','Crossfit','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
     VALUES('0605',TO_DATE('2022-07-13','YYYY-MM-DD'),'NSVLPJ78T45B612T','Zumba','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
@@ -1306,7 +1304,6 @@ INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCo
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
     VALUES('0607',TO_DATE('2022-07-16','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 INSERT INTO Prenotazione(CodicePrenotazione, DataPrenotazione, CFPersona, NomeCorso, NomePalestra)
->>>>>>> 71a99f8e6bf3ea51285b7350a66ae3a5cb505fb7:palestra.sql
     VALUES('0608',TO_DATE('2022-07-21','YYYY-MM-DD'),'YVGHMH50A69A400N','Boxe','Performance');
 
 
@@ -1358,27 +1355,27 @@ INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomeP
     VALUES('Venerdi','19','FCFDTF47H12I067C','Yoga','Fit For Smile');
 
 INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Martedi','12','DLFDRM47H12I002B','CrossFit','Fit For Smile');
+    VALUES('Martedi','12','DLFDRM47H12I002B','Crossfit','Fit For Smile');
 INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Giovedi','12','DLFDRM47H12I002B','CrossFit','Fit For Smile');
-
-
-
-
-INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Lunedi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
-INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Mercoledi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
-INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Venerdi','18','FCORMA47H12I002A','CrossFit','Level Up Via Argine');
+    VALUES('Giovedi','12','DLFDRM47H12I002B','Crossfit','Fit For Smile');
 
 
 
 
 INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Martedi','18','FCFDAE37H12I002A','CrossFit','Performance');
+    VALUES('Lunedi','18','FCORMA47H12I002A','Crossfit','Level Up Via Argine');
 INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
-    VALUES('Giovedi','18','FCFDAE37H12I002A','CrossFit','Performance');
+    VALUES('Mercoledi','18','FCORMA47H12I002A','Crossfit','Level Up Via Argine');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Venerdi','18','FCORMA47H12I002A','Crossfit','Level Up Via Argine');
+
+
+
+
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Martedi','18','FCFDAE37H12I002A','Crossfit','Performance');
+INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
+    VALUES('Giovedi','18','FCFDAE37H12I002A','Crossfit','Performance');
 
 INSERT INTO Conduce(GiornoConduzione, OraConduzione, CFPersona, NomeCorso, NomePalestra)
     VALUES('Lunedi','21','FCFDRM88E93I002A','Kick Boxing','Performance');
