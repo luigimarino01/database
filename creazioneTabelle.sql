@@ -62,7 +62,7 @@ CREATE TABLE Persona(
 CREATE TABLE Proprietario(
     CFPersona varchar(16) NOT NULL,
     DataContrattoAcquisto date NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona) ON DELETE CASCADE,
     PRIMARY KEY(CFPersona)
 );
 
@@ -77,27 +77,27 @@ CREATE TABLE Appartiene(
 CREATE TABLE Dipendente(
     CFPersona varchar(16) NOT NULL,
     NumeroTesseraDipendente varchar(50),
-    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona) ON DELETE CASCADE,
     PRIMARY KEY(CFPersona)
 );
 
 CREATE TABLE Segretario(
     CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona) ON DELETE CASCADE,
     PRIMARY KEY(CFPersona)
 );
 
 CREATE TABLE Istruttore(
     SpecializzazioneIstruttore varchar(30) NOT NULL,
     CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona) ON DELETE CASCADE,
     PRIMARY KEY(CFPersona)
 );
 
 CREATE TABLE Iscritto(
     NumeroTesseraIscritto varchar(50),
     CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Persona(CFPersona) ON DELETE CASCADE,
     PRIMARY KEY(CFPersona)
 );
 
