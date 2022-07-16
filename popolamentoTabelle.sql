@@ -353,10 +353,6 @@ INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Squat', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg press', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg extention', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg curl', 'Gambe');
-
-
---POPOLAMENTO TABELLA SOTTOSCRIVE
-INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
     VALUES(TO_DATE('2021-06-12','YYYY-MM-DD'),TO_DATE('2021-09-12','YYYY-MM-DD'),'XNZPNJ70A05H359U','Trimestrale','Fit For Smile');
 INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
     VALUES(TO_DATE('2021-10-03','YYYY-MM-DD'),TO_DATE('2022-10-03','YYYY-MM-DD'),'XNZPNJ70A05H359U','Annuale','Fit For Smile');
