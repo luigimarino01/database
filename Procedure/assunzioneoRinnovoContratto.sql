@@ -99,13 +99,10 @@ EXCEPTION
             VALUES(CODICECONTRATTOALPHA,NOMEPAL,SYSDATE,MESE,Salario,CFDipendente);
         END IF;
         ELSIF(CONTATORE = 3) THEN
-            INSERT INTO Istruttore(SpecializzazioneIstruttore,CFPersona) VALUES(Specializzazione,CFDipendente);
-            INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
-            VALUES(CODICECONTRATTOALPHA,NOMEPAL,SYSDATE,MESE,Salario,CFDipendente);
+            DBMS_OUTPUT.PUT_LINE('La persona non e un istruttore.');    
+            return;
         ELSIF(CONTATORE = 4) THEN
             INSERT INTO Contratto(CodiceContratto,NomePalestra,DataStipulazioneContratto,DataScadenzaContratto,Stipendio,CFPersona)
             VALUES(CODICECONTRATTOALPHA,NOMEPAL,SYSDATE,MESE,Salario,CFDipendente);
-
-
     END IF;
 END;
