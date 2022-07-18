@@ -1,0 +1,49 @@
+CREATE OR REPLACE PROCEDURE iscrittiMigliori (NomePal in  varchar) IS 
+mese date;
+abbtmp date;
+anno date;
+
+BEGIN
+anno := ADD_MONTHS(SYSDATE,-12);
+FOR r in (
+SELECT CFPERSONA
+    
+    FROM(SELECT COSTOSERVIZIO,CFPERSONA
+    FROM ACCEDE INNER JOIN SERVIZIO ON SERVIZIO.NomeServizio = ACCEDE.NomeServizio
+    WHERE SERVIZIO.NomePalestra = NomePal AND ACCEDE.DATAACCESSO > anno
+    GROUP BY COSTOSERVIZIO,CFPERSONA
+    ORDER BY CFPERSONA)    
+    
+    GROUP BY CFPERSONA
+    ORDER BY SUM(COSTOSERVIZIO) DESC FETCH NEXT 3 ROWS ONLY
+
+
+
+    
+)
+
+LOOP
+
+    SELECT MAX(DATASCADENZAABBONAMENTO)
+    INTO abbtmp
+    FROM SOTTOSCRIVE
+    WHERE r.CFPERSONA = CFPERSONA;
+
+IF(abbtmp>SYSDATE)
+THEN
+mese := ADD_MONTHS(abbtmp,1);
+
+UPDATE SOTTOSCRIVE
+SET DATASCADENZAABBONAMENTO = mese
+WHERE r.CFPERSONA = CFPERSONA and DATASCADENZAABBONAMENTO = abbtmp;
+
+ELSIF(abbtmp<SYSDATE)
+THEN
+mese := ADD_MONTHS(SYSDATE,1);
+INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
+    VALUES(SYSDATE,mese,r.CFPERSONA,'Mensile',NomePal);
+    END IF;
+END LOOP;  
+END;
+
+    
