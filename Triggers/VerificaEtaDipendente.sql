@@ -1,0 +1,28 @@
+CREATE OR REPLACE TRIGGER VerificaEtaDipendente
+BEFORE INSERT ON Dipendente
+FOR EACH ROW
+DECLARE
+    DN DATE;
+    MINORENNE EXCEPTION;
+    MAGGIORENNE EXCEPTION;
+BEGIN
+    SELECT DataNascitaPersona 
+    INTO DN
+    FROM PERSONA 
+    WHERE CFPersona = :new.CFPersona;
+
+    IF (SYSDATE - DN) / 365.25 < 18
+        THEN
+        RAISE MINORENNE;
+        ELSIF (SYSDATE - DN) / 365.25 > 64
+        THEN
+        RAISE MAGGIORENNE;
+    END IF;
+
+EXCEPTION 
+WHEN MINORENNE THEN
+RAISE_APPLICATION_ERROR(-20000,'Dipendente minorenne');
+WHEN MAGGIORENNE THEN
+RAISE_APPLICATION_ERROR(-20000,'Dipendente troppo anziano');
+
+END VerificaEtaDipendente;

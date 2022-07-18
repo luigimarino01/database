@@ -1,5 +1,5 @@
-CREATE OR REPLACE TRIGGER VerificaEta
-BEFORE INSERT ON Dipendente
+CREATE OR REPLACE TRIGGER VerificaEtaProprietario
+BEFORE INSERT ON Proprietario
 FOR EACH ROW
 DECLARE
     DN DATE;
@@ -14,15 +14,10 @@ BEGIN
     IF (SYSDATE - DN) / 365.25 < 18
         THEN
         RAISE MINORENNE;
-        ELSIF (SYSDATE - DN) / 365.25 > 64
-        THEN
-        RAISE MAGGIORENNE;
     END IF;
 
 EXCEPTION 
 WHEN MINORENNE THEN
-RAISE_APPLICATION_ERROR(-20000,'Dipendente minorenne');
-WHEN MAGGIORENNE THEN
-RAISE_APPLICATION_ERROR(-20000,'Dipendente troppo anziano');
+RAISE_APPLICATION_ERROR(-20000,'Proprietario minorenne');
 
-END VerificaEta;
+END VerificaEtaProprietario;

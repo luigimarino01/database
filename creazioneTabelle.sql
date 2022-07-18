@@ -130,7 +130,7 @@ CREATE TABLE Conduce(
     CFPersona varchar(16) NOT NULL,
     NomeCorso varchar(50) NOT NULL,
     NomePalestra varchar (50) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona) ON DELETE CASCADE,
     FOREIGN KEY(NomeCorso,NomePalestra) REFERENCES Corso(NomeCorso,NomePalestra),
     PRIMARY KEY(GiornoConduzione,OraConduzione,NomePalestra)
 );
