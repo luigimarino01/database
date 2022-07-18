@@ -1,9 +1,9 @@
 --POPOLAMENTO TABELLA SEDE
 
-INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Fit For Smile', 'Via Pietro Donadio', '80021', 'Afragola');
-INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Mondo Fitness', 'Via Giovanni Rana', '80024', 'Cardito');
-INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Level Up Via Argine', 'Via Argine', '80147', 'Napoli');
-INSERT INTO Sede(NomePalestra, Via, Cap, Citta) VALUES('Performance', 'Via Nizza', '00198', 'Roma');
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta, TessereDipendenti) VALUES('Fit For Smile', 'Via Pietro Donadio', '80021', 'Afragola',1);
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta, TessereDipendenti) VALUES('Mondo Fitness', 'Via Giovanni Rana', '80024', 'Cardito',0);
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta, TessereDipendenti) VALUES('Level Up Via Argine', 'Via Argine', '80147', 'Napoli',1);
+INSERT INTO Sede(NomePalestra, Via, Cap, Citta, TessereDipendenti) VALUES('Performance', 'Via Nizza', '00198', 'Roma',0);
 
 --POPOLAMENTO TABELLA ABBONAMENTO
 
@@ -353,6 +353,7 @@ INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Squat', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg press', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg extention', 'Gambe');
 INSERT INTO Esercizio(NomeEsercizio, GruppoMuscolare) VALUES('Leg curl', 'Gambe');
+INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
     VALUES(TO_DATE('2021-06-12','YYYY-MM-DD'),TO_DATE('2021-09-12','YYYY-MM-DD'),'XNZPNJ70A05H359U','Trimestrale','Fit For Smile');
 INSERT INTO Sottoscrive(DataSottoiscrizioneAbbonamento,DataScadenzaAbbonamento,CFPersona,TipoAbbonamento,NomePalestra)
     VALUES(TO_DATE('2021-10-03','YYYY-MM-DD'),TO_DATE('2022-10-03','YYYY-MM-DD'),'XNZPNJ70A05H359U','Annuale','Fit For Smile');

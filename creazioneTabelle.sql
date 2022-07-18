@@ -1,8 +1,9 @@
 CREATE TABLE Sede (
     NomePalestra varchar(50) NOT NULL,
-    Via varchar(255),
-    Cap varchar(10),
-    Citta varchar(255),
+    Via varchar(255) NOT NULL,
+    Cap varchar(10) NOT NULL,
+    Citta varchar(255) NOT NULL,
+    TessereDipendenti int NOT NULL,
     PRIMARY KEY(NomePalestra)
 );
 
@@ -178,6 +179,6 @@ CREATE TABLE Contiene(
     NomeEsercizio varchar(50) NOT NULL,
     CodiceSchedaAllenamento varchar(15) NOT NULL,
     FOREIGN KEY(NomeEsercizio) REFERENCES Esercizio(NomeEsercizio),
-    FOREIGN KEY(CodiceSchedaAllenamento) REFERENCES SchedaAllenamento(CodiceSchedaAllenamento),
+    FOREIGN KEY(CodiceSchedaAllenamento) REFERENCES SchedaAllenamento(CodiceSchedaAllenamento) ON DELETE CASCADE,
     PRIMARY KEY(NomeEsercizio, CodiceSchedaAllenamento)
 );
