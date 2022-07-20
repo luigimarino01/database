@@ -109,7 +109,7 @@ CREATE TABLE Contratto(
     DataScadenzaContratto date NOT NULL,
     Stipendio float NOT NULL,
     CFPersona varchar(16) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona),
+    FOREIGN KEY(CFPersona) REFERENCES Dipendente(CFPersona) ON DELETE CASCADE,
     FOREIGN KEY(NomePalestra) REFERENCES Sede(NomePalestra),
     PRIMARY KEY(CodiceContratto)
 );
@@ -131,7 +131,7 @@ CREATE TABLE Conduce(
     CFPersona varchar(16) NOT NULL,
     NomeCorso varchar(50) NOT NULL,
     NomePalestra varchar (50) NOT NULL,
-    FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona) ON DELETE CASCADE,
+    FOREIGN KEY(CFPersona) REFERENCES Istruttore(CFPersona),
     FOREIGN KEY(NomeCorso,NomePalestra) REFERENCES Corso(NomeCorso,NomePalestra),
     PRIMARY KEY(GiornoConduzione,OraConduzione,NomePalestra)
 );
